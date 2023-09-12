@@ -1,15 +1,15 @@
 public class Multiples {
-    public static void main(String[] args) {
+    public static int main(int a, int n, int b) {
         int count = 0;
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < n; i++) {
 
-            boolean divisible3 = i % 3 == 0;
-            boolean divisible5 = i % 5 == 0;
+            boolean divisible3 = i % a == 0;
+            boolean divisible5 = i % b == 0;
 
             if (divisible5 || divisible3) {
                 count ++;
             }
         }
-        System.out.println(count);
+         return(count);
     }
 }
