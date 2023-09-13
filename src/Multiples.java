@@ -1,7 +1,7 @@
 public class Multiples {
-    public static int main(int a, int n, int b) {
+    public static int multiple(int n, int a, int b) {
         int count = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
 
             boolean divisible3 = i % a == 0;
             boolean divisible5 = i % b == 0;
@@ -10,6 +10,9 @@ public class Multiples {
                 count ++;
             }
         }
-         return(count);
+        return count;
+    }
+    public static void main(String[] args) {
+        System.out.print(multiple(1000, 3, 5));
     }
 }
