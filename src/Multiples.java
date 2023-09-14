@@ -1,5 +1,5 @@
 public class Multiples {
-    public static int multiple(int n, int a, int b) {
+    public static int main(int n, int a, int b) {
         int count = 0;
         for (int i = 1; i < n; i++) {
 
@@ -13,6 +13,6 @@ public class Multiples {
         return count;
     }
     public static void main(String[] args) {
-        System.out.print(multiple(1000, 3, 5));
+        System.out.print(main(1000, 3, 5));
     }
 }
